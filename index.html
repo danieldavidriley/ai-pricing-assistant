@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>AI Pricing Assistant: interaction-state prototype</title>
+<meta name="description" content="A working prototype of the six states an AI feature needs in an analytics product: ready, working, result, low confidence, error and corrected. Invented data.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300..800&amp;display=swap">
+<link rel="stylesheet" href="page.css">
+<link rel="stylesheet" href="demo.css">
+<script defer src="demo.js"></script>
+</head>
+<body>
+<main class="page">
+  <div class="eyebrow">Concept build · October 2026 · Daniel Riley</div>
+  <h1>An AI assistant that admits what it doesn’t know.</h1>
+  <p class="intro">A working prototype of the six states an AI feature needs inside an analytics product: ready, working, result, low confidence, error and corrected. Start the first task, or jump to any state.</p>
+  <div class="links">
+    <a href="https://danielrilleyportfolio.netlify.app/pricing-assistant">Full case study: decisions and decision log</a>
+    <a href="https://danielrilleyportfolio.netlify.app/">Portfolio</a>
+  </div>
+
+  <div class="pa-shell" data-pa>
+    <div class="pa-controls">
+      <div class="pa-tabs" role="tablist" aria-label="Interaction states">
+        <button role="tab" type="button" data-state="ready" aria-selected="true">1 · Ready</button>
+        <button role="tab" type="button" data-state="working" aria-selected="false" tabindex="-1">2 · Working</button>
+        <button role="tab" type="button" data-state="result" aria-selected="false" tabindex="-1">3 · Result</button>
+        <button role="tab" type="button" data-state="low" aria-selected="false" tabindex="-1">4 · Low confidence</button>
+        <button role="tab" type="button" data-state="error" aria-selected="false" tabindex="-1">5 · Error</button>
+        <button role="tab" type="button" data-state="corrected" aria-selected="false" tabindex="-1">6 · Corrected</button>
+      </div>
+      <button class="pa-play" type="button" data-play>Play the full flow</button>
+    </div>
+    <div class="pa-frame">
+      <div class="pa-app" role="tabpanel" tabindex="-1" aria-label="Pricing assistant prototype" data-app>
+        <noscript><p class="pa-noscript">The prototype needs JavaScript.</p></noscript>
+      </div>
+    </div>
+    <p class="pa-rule" data-rule></p>
+    <p class="pa-sr" aria-live="polite" data-live></p>
+  </div>
+
+  <p class="note">Northfield Grocers, its products and every number are fictional. No client data and no former employer’s work is used.</p>
+</main>
+</body>
+</html>
